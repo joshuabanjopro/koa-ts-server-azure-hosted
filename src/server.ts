@@ -1,2 +1,12 @@
-const sum = (num1: number, num2: number) => num1 + num2
-console.log(sum(2, 3))
+import "dotenv/config";
+import Koa from 'koa';
+
+const app = new Koa();
+
+app.use(async (ctx) => {
+    ctx.body = "Houston, we have liftoff..."
+})
+
+app.listen(Number(process.env.PORT), () => {
+    console.log(`Server started with port ${process.env.PORT}`)
+});
