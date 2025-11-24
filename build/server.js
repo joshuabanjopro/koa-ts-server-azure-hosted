@@ -1,5 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-console.log("Hello World - the TS Way!!!");
-console.log("And now the JS way XD");
+const sum = (num1, num2) => num1 + num2;
+console.log(sum(2, 3));
 //# sourceMappingURL=server.js.map
